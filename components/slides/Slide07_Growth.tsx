@@ -219,11 +219,11 @@ export default function Slide07_Growth() {
             </div>
             <div style={{
               fontSize: 13, fontWeight: 700,
-              color: row.range.startsWith("-") ? "#C5DCF0" : "#89B4D4",
+              color: row.pct < 0 ? "#C5DCF0" : "#89B4D4",
               fontFamily: "var(--font-baskerville), serif",
               marginBottom: 4,
             }}>
-              {row.range}
+              {row.pct > 0 ? "+" : ""}{row.pct}%
             </div>
             <div style={{ fontSize: 9, color: "rgba(255,255,255,0.3)", letterSpacing: "1px" }}>
               {row.note}

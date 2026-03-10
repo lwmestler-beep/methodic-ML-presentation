@@ -101,11 +101,6 @@ export default function Slide05_Operations() {
                   <span style={{ color: "#89B4D4", fontSize: 12 }}>→</span>
                   {b.item}
                 </div>
-                {b.person && (
-                  <span style={{ fontSize: 10, color: "#89B4D4", whiteSpace: "nowrap", marginLeft: 8, opacity: 0.8 }}>
-                    {b.person}
-                  </span>
-                )}
               </motion.div>
             ))}
           </div>
@@ -114,7 +109,7 @@ export default function Slide05_Operations() {
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.1, duration: 0.5 }}
             style={{ marginTop: 14, fontSize: 11, color: "rgba(255,255,255,0.3)", lineHeight: 1.6 }}
           >
-            This dual structure ensures experienced on-site leadership with a full team scaling systems from day one.
+            {operationsData.footer}
           </motion.div>
         </motion.div>
       </div>

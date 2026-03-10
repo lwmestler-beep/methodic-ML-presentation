@@ -64,7 +64,7 @@ export default function Slide08_Returns() {
           {/* Year 1 ROI + Repayment */}
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             {[
-              { label: "YEAR 1 ROI", target: returnsData.year1ROI, suffix: "%~", decimals: 0 },
+              { label: "POST-PAYBACK YIELD", target: returnsData.postPaybackYield, suffix: "%+", decimals: 0 },
               { label: "PRINCIPAL REPAYMENT", target: returnsData.principalRepayment, suffix: " Yrs", decimals: 1 },
             ].map((m, i) => (
               <motion.div
@@ -135,7 +135,7 @@ export default function Slide08_Returns() {
               fontStyle: "italic", fontFamily: "var(--font-baskerville), serif", lineHeight: 1.5,
             }}
           >
-            &ldquo;Zero Management Fee: We only win when you do.&rdquo;
+            &ldquo;{returnsData.tagline}&rdquo;
           </motion.div>
         </div>
       </div>

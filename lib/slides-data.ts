@@ -23,7 +23,7 @@ export const teamData = {
   ],
   stats: [
     { value: "9", label: "Entrepreneurs" },
-    { value: "$5M+", label: "Combined Revenue" },
+    { value: "$4M+", label: "Combined Revenue" },
     { value: "7", label: "Strategic Advisors" },
   ],
 };
@@ -42,7 +42,7 @@ export const advisors = [
   { name: "Scott Waxler", title: "Lockebridge Capital" },
   { name: "Evan Farber", title: "Cranemere Group" },
   { name: "Erik Noyes", title: "Babson College" },
-  { name: "Edward Gorelick", title: "CPA, Tax Advisory" },
+  { name: "Edward Gorelick", title: "CPA, Gorelick & Uslaner" },
   { name: "Chad Mestler", title: "Helvetica Group" },
   { name: "Vincent Sica", title: "Vintra Holdings" },
 ];
@@ -81,34 +81,34 @@ export const dealStructure = {
   transactionCosts: "$125K",
   workingCapital: "$125K",
   sources: [
-    { label: "SBA 7(a) Loan", amount: "$1,225,000", pct: "55.7%", color: "#4A7FA8" },
-    { label: "Co-Investor Equity", amount: "$785,000", pct: "35.7%", color: "#89B4D4" },
-    { label: "Seller Rollover (20%)", amount: "$440,000", pct: "20.0%", color: "#C5DCF0" },
-    { label: "Methodic Cash", amount: "$100,000", pct: "4.5%", color: "#6B93B8" },
+    { label: "Loan", amount: "$1,225,000", pct: "50%", color: "#4A7FA8" },
+    { label: "Co-Investor Equity", amount: "$785,000", pct: "32%", color: "#89B4D4" },
+    { label: "Seller Rollover (20%)", amount: "$440,000", pct: "18%", color: "#C5DCF0" },
   ],
-  loanTerms: "SBA 7(a): 10-year term  •  10.5% interest  •  $203,665 annual debt service  •  Seller invests alongside co-investors, receives distributions until paid off (~Year 6)",
+  loanTerms: "Loan: 10-year term  •  10.5% interest  •  $203,665 annual debt service  •  Seller invests alongside co-investors, receives distributions until paid off (~Year 6)",
 };
 
 export const operationsData = {
   operator: {
     salary: "$100,000+",
     profitShare: "5%",
-    description: "The operator manages estimating, crew scheduling, client relationships, and project oversight. Their compensation is built into our financial model before any distributions — this is not an afterthought.",
+    description: "The operator manages estimating, crew scheduling, client relationships, and project oversight.",
     note: "Salary + profit share aligns the operator's incentives directly with business performance.",
   },
   backend: [
-    { item: "Digital marketing & lead generation", person: "Brock Alpher" },
-    { item: "AI systems & automation", person: "Shah Durran" },
-    { item: "Operations & process optimization", person: "Jacob McKinney" },
-    { item: "Financial oversight & investor reporting", person: "" },
-    { item: "Strategic growth planning & pricing", person: "" },
-    { item: "CRM, scheduling, and technology stack", person: "" },
+    { item: "Digital marketing & lead generation" },
+    { item: "AI systems & automation" },
+    { item: "Operations & process optimization" },
+    { item: "Financial oversight & investor reporting" },
+    { item: "Strategic growth planning & pricing" },
+    { item: "CRM, scheduling, and technology stack" },
   ],
+  footer: "This dual structure ensures the business has experienced leadership on-site and a full team of operators behind it scaling systems, marketing, and efficiency from day one.",
 };
 
 export const returnsData = {
   irr: 29.4,
-  year1ROI: 20,
+  postPaybackYield: 22,
   principalRepayment: 5.8,
   terms: [
     { label: "Preferred Return", value: "8%" },
@@ -117,7 +117,8 @@ export const returnsData = {
     { label: "Employee Profit Share", value: "5%" },
     { label: "Capital Reserves", value: "3–5%" },
   ],
-  note: "Based on $530K Year 1 cash flow (after $100K+ operator salary)  •  5% annual growth  •  Operator salary + profit share already deducted",
+  note: "Based on $530K Year 1 cash flow (after $100K+ operator salary)  •  conservative annual growth assumptions",
+  tagline: "Zero Management Fee: We only win when you do",
 };
 
 export const valueCreationPhases = [
@@ -157,11 +158,11 @@ export const valueCreationPhases = [
 ];
 
 export const growthProjections = [
-  { year: 1, range: "-5% to -10%", note: "Transition dip", revenue: 2375, cashflow: 530 },
-  { year: 2, range: "0% to +5%", note: "Stabilization", revenue: 2612, cashflow: 620 },
-  { year: 3, range: "+5% to +10%", note: "Systems compound", revenue: 2743, cashflow: 710 },
-  { year: 4, range: "+8% to +12%", note: "Services expand", revenue: 2880, cashflow: 810 },
-  { year: 5, range: "+10% to +15%", note: "Full playbook", revenue: 3024, cashflow: 920 },
+  { year: 1, pct: -5, note: "Transition dip", revenue: 2375, cashflow: 530 },
+  { year: 2, pct: 10, note: "Stabilization", revenue: 2612, cashflow: 620 },
+  { year: 3, pct: 5, note: "Systems compound", revenue: 2743, cashflow: 710 },
+  { year: 4, pct: 5, note: "Services expand", revenue: 2880, cashflow: 810 },
+  { year: 5, pct: 5, note: "Full playbook", revenue: 3024, cashflow: 920 },
 ];
 
 export const downsideProtection = [

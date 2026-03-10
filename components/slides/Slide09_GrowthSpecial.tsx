@@ -320,10 +320,10 @@ export default function Slide09_GrowthSpecial() {
             <div style={{
               fontFamily: "var(--font-baskerville), serif",
               fontSize: 13, fontWeight: 700,
-              color: row.range.startsWith("-") ? "rgba(197,220,240,0.8)" : "#89B4D4",
+              color: row.pct < 0 ? "rgba(197,220,240,0.8)" : "#89B4D4",
               marginBottom: 3,
             }}>
-              {row.range}
+              {row.pct > 0 ? "+" : ""}{row.pct}%
             </div>
             <div style={{ fontSize: 9, color: "rgba(255,255,255,0.3)", letterSpacing: "1px", marginBottom: 6 }}>
               {row.note}
