@@ -6,25 +6,24 @@ export const slideMeta = [
   { id: 2, title: "Operating Team" },
   { id: 3, title: "The Deal" },
   { id: 4, title: "Financials" },
-  { id: 5, title: "Operations" },
-  { id: 6, title: "Deal Structure" },
-  { id: 7, title: "Growth" },
-  { id: 8, title: "Returns" },
-  { id: 9, title: "Opportunity" },
-  { id: 10, title: "Value Creation" },
-  { id: 11, title: "Downside" },
-  { id: 12, title: "Let's Build" },
+  { id: 5, title: "Deal Structure" },
+  { id: 6, title: "Stability" },
+  { id: 7, title: "Returns" },
+  { id: 8, title: "Value Creation" },
+  { id: 9, title: "Growth" },
+  { id: 10, title: "Downside" },
+  { id: 11, title: "Let's Build" },
 ];
 
 export const teamData = {
   founders: [
-    { name: "Logan Mestler", role: "Co-Founder & Managing Partner" },
-    { name: "Gavin Mestler", role: "Co-Founder & Managing Partner" },
-    { name: "Dean Farber", role: "Co-Founder & Partner" },
+    { name: "Gavin Mestler", role: "Managing Partner & Co-Founder", photo: "/founder-gavin.png" },
+    { name: "Logan Mestler", role: "Managing Partner & Co-Founder", photo: "/founder-logan.png" },
+    { name: "Dean Farber", role: "Managing Partner & Co-Founder", photo: "/founder-dean.png" },
   ],
   stats: [
     { value: "9", label: "Entrepreneurs" },
-    { value: "$4M+", label: "Combined Revenue" },
+    { value: "$5M+", label: "Combined Revenue" },
     { value: "7", label: "Strategic Advisors" },
   ],
 };
@@ -43,76 +42,91 @@ export const advisors = [
   { name: "Scott Waxler", title: "Lockebridge Capital" },
   { name: "Evan Farber", title: "Cranemere Group" },
   { name: "Erik Noyes", title: "Babson College" },
-  { name: "Edward Gorelick", title: "CPA, Gorelick & Uslaner" },
+  { name: "Edward Gorelick", title: "CPA, Tax Advisory" },
   { name: "Chad Mestler", title: "Helvetica Group" },
   { name: "Vincent Sica", title: "Vintra Holdings" },
 ];
 
-export const dealStats = [
-  { label: "Est.", value: "2005" },
-  { label: "Revenue", value: "$2.5M" },
-  { label: "Crews", value: "5" },
-  { label: "Clients", value: "80–100" },
-  { label: "Equipment", value: "$1.5M" },
+export const dealFeatures = [
+  {
+    title: "Full-Service Landscaping",
+    desc: "Hardscape construction, plantings, sod installation, landscape design, and seasonal maintenance across Boston's South Shore.",
+    icon: "🌿",
+  },
+  {
+    title: "Recurring Revenue Base",
+    desc: "5 maintenance crews serving 80–100 customers monthly. $30K–$40K/month in recurring maintenance revenue year-round.",
+    icon: "⚙️",
+  },
+  {
+    title: "Commercial Snow Removal",
+    desc: "Contracted snow removal for office parks and institutional clients provides reliable winter revenue floor.",
+    icon: "❄️",
+  },
+  {
+    title: "$1.5M Equipment Fleet",
+    desc: "Substantial fleet of trucks, excavators, skid steers, and specialized landscaping equipment included in purchase price.",
+    icon: "🚛",
+  },
 ];
 
 export const financials = [
-  { year: "2023", revenue: 2.62, sde: 0.779, margin: 29.7 },
-  { year: "2024", revenue: 2.4, sde: 0.693, margin: 28.8 },
-  { year: "2025", revenue: 2.5, sde: 0.63, margin: 25.2 },
+  { year: "2023", revenue: "$2.62M", sde: "$779K", margin: "29.7%" },
+  { year: "2024", revenue: "$2.40M", sde: "$693K", margin: "28.8%" },
+  { year: "2025 (Proj.)", revenue: "$2.50M", sde: "$630K", margin: "25.2%" },
 ];
 
 export const dealStructure = {
-  purchasePrice: 2200000,
-  transactionCosts: 125000,
-  workingCapital: 125000,
+  purchasePrice: "$2,200,000",
+  transactionCosts: "$125K",
+  workingCapital: "$125K",
   sources: [
-    { label: "SBA Loan", amount: 1225000, pct: 50, color: "#4A7FA8" },
-    { label: "Co-Investor Equity", amount: 785000, pct: 32, color: "#89B4D4" },
-    { label: "Seller Rollover", amount: 440000, pct: 18, color: "#C5DCF0" },
+    { label: "Loan", amount: "$1,225,000", pct: "55.7%", color: "#4A7FA8" },
+    { label: "Co-Investor Equity", amount: "$785,000", pct: "35.7%", color: "#89B4D4" },
+    { label: "Seller Rollover (20%)", amount: "$440,000", pct: "20.0%", color: "#C5DCF0" },
+    { label: "Methodic Cash", amount: "$100,000", pct: "4.5%", color: "#6B93B8" },
   ],
-  loanTerms: "10-year · 10.5% interest · $203,665 annual debt service",
+  loanTerms: "10-year term  •  10.5% interest  •  $203,665 annual debt service  •  Seller invests alongside co-investors, receives distributions until paid off (~Year 6)",
 };
 
-export const growthProjections = [
-  { year: 1, note: "Transition dip", pct: -5, revenue: 2375, cashflow: 530 },
-  { year: 2, note: "Stabilization", pct: 10, revenue: 2612, cashflow: 620 },
-  { year: 3, note: "Systems compound", pct: 5, revenue: 2743, cashflow: 710 },
-  { year: 4, note: "Services expand", pct: 5, revenue: 2880, cashflow: 810 },
-  { year: 5, note: "Full playbook", pct: 5, revenue: 3024, cashflow: 920 },
-];
+export const operationsData = {
+  operator: {
+    salary: "$100,000+",
+    profitShare: "5%",
+    responsibilities: [
+      "Estimating & crew scheduling",
+      "Client relationships & project oversight",
+      "Compensation built into financial model before distributions",
+    ],
+    note: "Salary + profit share aligns the operator's incentives directly with business performance.",
+  },
+  backend: [
+    { item: "Digital marketing & lead generation", person: "Brock Alpher" },
+    { item: "AI systems & automation", person: "Shah Durran" },
+    { item: "Operations & process optimization", person: "Jacob McKinney" },
+    { item: "Financial oversight & investor reporting", person: "" },
+    { item: "Strategic growth planning & pricing", person: "" },
+    { item: "CRM, scheduling, and technology stack", person: "" },
+  ],
+};
 
 export const returnsData = {
   irr: 29.4,
-  postPaybackYield: 22,
+  year1ROI: 20,
   principalRepayment: 5.8,
-  preferredReturn: 8,
-  coInvestorSharePre: 70,
-  coInvestorSharePost: 40,
-  employeeProfitShare: 5,
+  terms: [
+    { label: "Preferred Return", value: "8%" },
+    { label: "Co-Investor Share (Pre)", value: "70%" },
+    { label: "Co-Investor Share (Post)", value: "40%" },
+    { label: "Employee Profit Share", value: "5%" },
+    { label: "Capital Reserves", value: "3–5%" },
+  ],
+  note: "Based on $530K Year 1 cash flow (after $100K+ operator salary)  •  5% annual growth  •  Operator salary + profit share already deducted",
 };
-
-export const opportunityGaps = [
-  "No digital marketing, SEO, or Google Ads",
-  "Poor website / media presence",
-  "No CRM system",
-  "No field service platform",
-  "No route optimization or job costing",
-  "Hardscape clients not converted to maintenance",
-  "No formal estimating process",
-  "Customer contracts not formalized",
-];
-
-export const opportunityUpside = [
-  "Landscape design as growth addition",
-  "Snow contracts can be expanded",
-  "Adjacent towns untapped",
-  "Industry growing at 5.2% CAGR through 2029",
-];
 
 export const valueCreationPhases = [
   {
-    range: "Months 1–6",
+    range: "MONTHS 1–6",
     title: "Stabilize & Systematize",
     items: [
       "Install field service platform (Aspire/Jobber)",
@@ -123,7 +137,7 @@ export const valueCreationPhases = [
     color: "#4A7FA8",
   },
   {
-    range: "Months 6–18",
+    range: "MONTHS 6–18",
     title: "Market & Convert",
     items: [
       "Launch SEO + Google Ads campaigns",
@@ -134,7 +148,7 @@ export const valueCreationPhases = [
     color: "#89B4D4",
   },
   {
-    range: "Years 2–5",
+    range: "YEARS 2–5",
     title: "Scale & Expand",
     items: [
       "Grow recurring revenue from 30% to 50%+",
@@ -146,25 +160,29 @@ export const valueCreationPhases = [
   },
 ];
 
+export const growthProjections = [
+  { year: 1, range: "-5% to -10%", note: "Transition dip", revenue: 2375, cashflow: 530 },
+  { year: 2, range: "0% to +5%", note: "Stabilization", revenue: 2612, cashflow: 620 },
+  { year: 3, range: "+5% to +10%", note: "Systems compound", revenue: 2743, cashflow: 710 },
+  { year: 4, range: "+8% to +12%", note: "Services expand", revenue: 2880, cashflow: 810 },
+  { year: 5, range: "+10% to +15%", note: "Full playbook", revenue: 3024, cashflow: 920 },
+];
+
 export const downsideProtection = [
   {
     risk: "Owner Transition Risk",
     mitigation: "Seller committed to 6–12 month advisory role with 20% rollover equity. Non-family office admin staying post-sale. Dedicated $100K+ operator hired from day one.",
-    icon: "👤",
   },
   {
-    risk: "Revenue Concentration",
+    risk: "Revenue Diversification",
     mitigation: "No single customer exceeds 5% of revenue. 80–100 active maintenance clients across residential and commercial. Diversified across hardscape, maintenance, and snow.",
-    icon: "📊",
   },
   {
     risk: "Seasonal Cash Flow",
-    mitigation: "Commercial snow removal fills winter months. Maintenance revenue continues year-round. $125K working capital reserve buffers slow periods.",
-    icon: "❄️",
+    mitigation: "Commercial snow removal contracts fill winter months. Maintenance revenue continues year-round. $125K working capital reserve buffers slow periods.",
   },
   {
-    risk: "Capital at Risk",
+    risk: "Asset Protection",
     mitigation: "$1.5M in FF&E provides tangible downside floor. Equipment liquidation value materially de-risks total capital invested in the deal.",
-    icon: "🔒",
   },
 ];

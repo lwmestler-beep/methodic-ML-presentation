@@ -218,12 +218,12 @@ export default function Slide07_Growth() {
               YEAR {row.year}
             </div>
             <div style={{
-              fontSize: 15, fontWeight: 700,
-              color: row.pct < 0 ? "#C5DCF0" : "#89B4D4",
+              fontSize: 13, fontWeight: 700,
+              color: row.range.startsWith("-") ? "#C5DCF0" : "#89B4D4",
               fontFamily: "var(--font-baskerville), serif",
               marginBottom: 4,
             }}>
-              {row.pct > 0 ? "+" : ""}{row.pct}%
+              {row.range}
             </div>
             <div style={{ fontSize: 9, color: "rgba(255,255,255,0.3)", letterSpacing: "1px" }}>
               {row.note}
