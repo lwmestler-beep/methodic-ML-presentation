@@ -1,4 +1,4 @@
-export const TOTAL_SLIDES = 13;
+export const TOTAL_SLIDES = 12;
 
 export const slideMeta = [
   { id: 0, title: "Cover" },
