@@ -81,23 +81,19 @@ export const dealStructure = {
   transactionCosts: "$125K",
   workingCapital: "$125K",
   sources: [
-    { label: "Loan", amount: "$1,225,000", pct: "55.7%", color: "#4A7FA8" },
+    { label: "SBA 7(a) Loan", amount: "$1,225,000", pct: "55.7%", color: "#4A7FA8" },
     { label: "Co-Investor Equity", amount: "$785,000", pct: "35.7%", color: "#89B4D4" },
     { label: "Seller Rollover (20%)", amount: "$440,000", pct: "20.0%", color: "#C5DCF0" },
     { label: "Methodic Cash", amount: "$100,000", pct: "4.5%", color: "#6B93B8" },
   ],
-  loanTerms: "10-year term  •  10.5% interest  •  $203,665 annual debt service  •  Seller invests alongside co-investors, receives distributions until paid off (~Year 6)",
+  loanTerms: "SBA 7(a): 10-year term  •  10.5% interest  •  $203,665 annual debt service  •  Seller invests alongside co-investors, receives distributions until paid off (~Year 6)",
 };
 
 export const operationsData = {
   operator: {
     salary: "$100,000+",
     profitShare: "5%",
-    responsibilities: [
-      "Estimating & crew scheduling",
-      "Client relationships & project oversight",
-      "Compensation built into financial model before distributions",
-    ],
+    description: "The operator manages estimating, crew scheduling, client relationships, and project oversight. Their compensation is built into our financial model before any distributions — this is not an afterthought.",
     note: "Salary + profit share aligns the operator's incentives directly with business performance.",
   },
   backend: [

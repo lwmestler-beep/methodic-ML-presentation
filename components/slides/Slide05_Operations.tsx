@@ -55,22 +55,18 @@ export default function Slide05_Operations() {
             ))}
           </div>
 
-          <div style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", lineHeight: 1.65, marginBottom: 16 }}>
+          <motion.div
+            initial={{ opacity: 0, x: -12 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.55 }}
+            style={{ fontSize: 12, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, marginBottom: 14 }}
+          >
+            {operationsData.operator.description}
+          </motion.div>
+
+          <div style={{ fontSize: 12, color: "rgba(137,180,212,0.7)", lineHeight: 1.6, fontStyle: "italic" }}>
             {operationsData.operator.note}
           </div>
-
-          {operationsData.operator.responsibilities.map((r, i) => (
-            <motion.div
-              key={r}
-              initial={{ opacity: 0, x: -12 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.55 + i * 0.08 }}
-              style={{ display: "flex", alignItems: "flex-start", gap: 8, fontSize: 12, color: "rgba(255,255,255,0.55)", marginBottom: 8 }}
-            >
-              <span style={{ color: "#89B4D4", flexShrink: 0 }}>—</span>
-              {r}
-            </motion.div>
-          ))}
         </motion.div>
 
         {/* Methodic backend */}
