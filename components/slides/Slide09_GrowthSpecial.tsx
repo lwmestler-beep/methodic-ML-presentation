@@ -268,7 +268,7 @@ export default function Slide09_GrowthSpecial() {
             fontSize: 28, fontWeight: 700, color: "#fff",
             fontVariantNumeric: "tabular-nums",
           }}>
-            ${totalRevCounter.toFixed(0)}K
+            ${(totalRevCounter / 1000).toFixed(1)}M
           </div>
           <div style={{ fontSize: 10, color: "rgba(255,255,255,0.3)", marginTop: 4 }}>
             projected cumulative
